@@ -102,7 +102,7 @@ class ScriptExecutor():  # pylint:disable=too-few-public-methods
             If Tensorflow is not found, or is not between versions 2.4 and 2.9
         """
         min_ver = (2, 10)
-        max_ver = (2, 10)
+        max_ver = (2, 99)
         try:
             import tensorflow as tf  # noqa pylint:disable=import-outside-toplevel,unused-import
         except ImportError as err:

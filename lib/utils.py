@@ -5,7 +5,6 @@ import json
 import logging
 import os
 import sys
-import tkinter as tk
 import typing as T
 import warnings
 import zipfile
@@ -286,6 +285,7 @@ def get_dpi() -> float | None:
     """
     logger = logging.getLogger(__name__)
     try:
+        import tkinter as tk
         root = tk.Tk()
         dpi = root.winfo_fpixels('1i')
     except tk.TclError:
